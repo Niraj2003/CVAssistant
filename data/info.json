@@ -1,0 +1,84 @@
+{
+  "name": "Niraj Amrutkar",
+  "phone": "+91 99606 41238",
+  "phone_raw": "+919960641238",
+  "email": "nirajamr03@gmail.com",
+  "linkedin": "Niraj-Amrutkar",
+  "linkedin_url": "https://www.linkedin.com/in/niraj-amrutkar/",
+  "github_url": "https://github.com/niraj2003/",
+  "leetcode_url": "https://leetcode.com/niraj03/",
+  "summary": "Results-driven Software Engineer with 1+ year of experience...",
+  "education": [
+    {
+      "institute": "Vishwakarma Institute of Information Technology",
+      "duration": "Nov 2020 -- May 2024",
+      "degree": "B.Tech in Information Technology, CGPA: 9.27/10",
+      "location": "Pune, MH, India",
+      "details": "Relevant Coursework: Operating Systems, Computer Networks, DBMS, DSA"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Java",
+      "C++",
+      "JavaScript",
+      "SQL",
+      "NoSQL"
+    ],
+    "frameworks": [
+      "Spring Boot",
+      "FastAPI",
+      "Node.js",
+      "Express.js",
+      "LangChain"
+    ],
+    "technologies": [
+      "Kafka",
+      "OpenSearch",
+      "REST APIs",
+      "Microservices",
+      "RAG"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "tools": [
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "Prometheus",
+      "Splunk",
+      "Git",
+      "VS Code",
+      "Jira"
+    ]
+  },
+  "work_experience": [
+    {
+      "company": "S and P Global",
+      "duration": "July 2024 -- Present",
+      "role": "Software Engineer",
+      "location": "Hyderabad, India",
+      "points": [
+        "Built a Spring Boot microservice ingesting 10K+ Kafka events/day into OpenSearch, reducing query latency by 25%.",
+        "Developed a scalable RAG system using LangChain, FastAPI, OpenSearch, and Ollama.",
+        "Tuned vector-based retrieval for semantic search, improving accuracy by 15%.",
+        "Set up CI/CD using GitHub Actions and Docker, reducing deployment time by 20%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Speech Therapy Assessment App",
+      "url": "https://github.com/Niraj2003/Speech-Therapy-Assessment",
+      "tech_stack": "Node.js, Express, MySQL, Cloudinary",
+      "description": "Created REST APIs for managing 100+ therapy sessions/day with image/audio support via Cloudinary."
+    }
+  ],
+  "achievements": [
+    "Top 0.14% (Rank: 1785/1.3M) in TCS CodeVita Round 1, 2023.",
+    "Winner Fix and Find coding competition among 50+ teams."
+  ]
+}
