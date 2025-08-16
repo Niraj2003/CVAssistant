@@ -3,7 +3,8 @@ import os
 
 from jinja2 import Template
 
-if __name__ == '__main__':
+
+def site_generator():
     # Load data
     with open('data/info.json') as f:
         data = json.load(f)
@@ -19,3 +20,5 @@ if __name__ == '__main__':
     os.makedirs('portfolio', exist_ok=True)
     with open('portfolio/index.html', 'w') as f:
         f.write(rendered_html)
+
+    print("Portfolio site generated successfully at portfolio/index.html")

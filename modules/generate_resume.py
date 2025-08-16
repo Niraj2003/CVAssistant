@@ -15,9 +15,6 @@ def escape_latex(text):
 
 
 def escape_data(data):
-    """
-    Recursively escapes LaTeX special characters in all string fields of the JSON data.
-    """
     if isinstance(data, dict):
         return {k: escape_data(v) for k, v in data.items()}
     elif isinstance(data, list):
@@ -28,6 +25,7 @@ def escape_data(data):
 
 
 def compile_latex():
+    # PATH as per MiKTeX installation
     command = [r'C:\Users\ADITYA\AppData\Local\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe', '-interaction=nonstopmode',
                '-output-directory', 'resume', 'resume/resume.tex']
 
@@ -40,7 +38,7 @@ def compile_latex():
     return result
 
 
-if __name__ == '__main__':
+def resume_builder():
     # Load and escape user data
     with open('data/info.json', encoding='utf-8') as f:
         raw_data = json.load(f)
@@ -65,7 +63,7 @@ if __name__ == '__main__':
 
     result = compile_latex()
 
-    pdf_path = 'resume/resume.pdf'
+    pdf_path = 'resume/resume_old.pdf'
     if result.returncode != 0:
         with open('resume/error.log', 'w', encoding='utf-8') as log:
             log.write(result.stdout + "\n" + result.stderr)
@@ -73,4 +71,4 @@ if __name__ == '__main__':
     elif not os.path.exists(pdf_path):
         print("Compilation succeeded, but PDF not found.")
     else:
-        print(f"Resume PDF generated successfully → {pdf_path}")
+        print(f"Resume PDF generated successfully at {pdf_path}")
