@@ -7,14 +7,21 @@
   "linkedin_url": "https://www.linkedin.com/in/niraj-amrutkar/",
   "github_url": "https://github.com/niraj2003/",
   "leetcode_url": "https://leetcode.com/niraj03/",
-  "summary": "Results-driven Software Engineer with 1+ year of experience...",
+  "summary": "Skilled Software Developer with expertise in Java, Spring Boot, and microservices. Proficient in CI/CD automation with Docker and Kubernetes, with a proven track record of optimizing system performance and reducing latency in production environments",
   "education": [
     {
       "institute": "Vishwakarma Institute of Information Technology",
       "duration": "Nov 2020 -- May 2024",
       "degree": "B.Tech in Information Technology, CGPA: 9.27/10",
       "location": "Pune, MH, India",
-      "details": "Relevant Coursework: Operating Systems, Computer Networks, DBMS, DSA"
+      "details": "Relevant Coursework: Operating Systems, Computer Networks, DBMS, Data Structures and Algorithms"
+    },
+    {
+      "institute": "Dr. J. K. Wani Jr. College",
+      "duration": "June 2019 -- Feb 2020",
+      "degree": "B.Tech in Information Technology, HSC: 77.69%",
+      "location": "Dhule, MH, India",
+      "details": "JEE: 93.61%ile, CET: 97.11%ile"
     }
   ],
   "skills": {
@@ -28,8 +35,8 @@
     "frameworks": [
       "Spring Boot",
       "FastAPI",
+      "React.js",
       "Node.js",
-      "Express.js",
       "LangChain"
     ],
     "technologies": [
@@ -45,27 +52,36 @@
       "MongoDB"
     ],
     "tools": [
+      "Git",
+      "GitHub",
       "Docker",
       "Kubernetes",
-      "GitHub Actions",
-      "Prometheus",
       "Splunk",
-      "Git",
-      "VS Code",
+      "Prometheus",
       "Jira"
     ]
   },
   "work_experience": [
     {
-      "company": "S and P Global",
-      "duration": "July 2024 -- Present",
+      "company": "S&P Global",
+      "duration": "July 2024 -- July 2025",
       "role": "Software Engineer",
       "location": "Hyderabad, India",
       "points": [
-        "Built a Spring Boot microservice ingesting 10K+ Kafka events/day into OpenSearch, reducing query latency by 25%.",
-        "Developed a scalable RAG system using LangChain, FastAPI, OpenSearch, and Ollama.",
-        "Tuned vector-based retrieval for semantic search, improving accuracy by 15%.",
-        "Set up CI/CD using GitHub Actions and Docker, reducing deployment time by 20%."
+        "Developed a scalable Spring Boot service to ingest and index 10K+ daily Kafka events into OpenSearch, reducing search latency by 25%",
+        "Designed and deployed an end-to-end Retrieval-Augmented Generation (RAG) system using OpenSearch, LangChain, FastAPI, and Ollama to deliver context-aware responses over domain-specific data.",
+        "Improved vector-based semantic search performance in OpenSearch by 15% through optimized chunking, embedding tuning, and hybrid query techniques",
+        "Implemented CI/CD pipelines using Docker and GitHub Actions, integrated Prometheus for monitoring, reducing deployment time by 20% and improving system observability"
+      ]
+    },
+    {
+      "company": "NxtPe",
+      "duration": "Jan 2024 -- Feb 2024",
+      "role": "Software Engineer Intern",
+      "location": "Remote, India",
+      "points": [
+        "Improved notification reliability in a 5-service Spring Boot microservices system, reducing failures by 15%.",
+        "Collaborated with team to refine designs and document specs, ensuring 99% uptime for notification services."
       ]
     }
   ],
@@ -73,12 +89,15 @@
     {
       "name": "Speech Therapy Assessment App",
       "url": "https://github.com/Niraj2003/Speech-Therapy-Assessment",
-      "tech_stack": "Node.js, Express, MySQL, Cloudinary",
-      "description": "Created REST APIs for managing 100+ therapy sessions/day with image/audio support via Cloudinary."
+      "tech_stack": "Node.js, Express, MySQL, Cloudinary, React Native",
+      "points": [
+        "Created a web app with RESTful APIs, managing 100+ daily therapy sessions via Cloudinary integration.",
+        "Supported CRUD operations for categories, subcategories, cards, and assessments."
+      ]
     }
   ],
   "achievements": [
-    "Top 0.14% (Rank: 1785/1.3M) in TCS CodeVita Round 1, 2023.",
-    "Winner Fix and Find coding competition among 50+ teams."
+    "Ranked in top 0.14% (1785/1.3M) in TCS CodeVita Round-1 2023, a global coding competition.",
+    "Won Fix and Find Competition, outpacing 50+ teams in a coding and problem-solving challenge"
   ]
 }

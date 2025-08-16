@@ -6,11 +6,11 @@
 
 \name{ {{ name }} }
 \address{
-\href{tel:{{ phone_raw }}}{\faPhone\ {{ phone }}} \hspace{1em}
-\href{mailto:{{ email }}}{\faEnvelope\ {{ email }}} \hspace{1em}
-\href{ {{ linkedin_url }} }{\faLinkedin\ {{ linkedin }} } \hspace{1em}
-\href{ {{ github_url }} }{\faGithub\ GitHub } \hspace{1em}
-\href{ {{ leetcode_url }} }{LeetCode}
+    \href{tel:{{ phone_raw }}}{\faPhone\ {{ phone }}} \hspace{1em}
+    \href{mailto:{{ email }}}{\faEnvelope\ {{ email }}} \hspace{1em}
+    \href{ {{ linkedin_url }} }{\faLinkedin\ {{ linkedin }} } \hspace{1em}
+    \href{ {{ github_url }} }{\faGithub\ GitHub } \hspace{1em}
+    \href{ {{ leetcode_url }} }{LeetCode}
 }
 
 
@@ -26,7 +26,6 @@
             \item {{ edu.details }}
         \end{rSubsection}
             {% endfor %}
-
     \end{rSection}
 
     \begin{rSection}{Technical Skills}
@@ -41,8 +40,18 @@
 
     \begin{rSection}{Work Experience}
     {% for job in work_experience %}
-        \begin{rSubsection}{ {{ job.company | replace("&", "\\&") }} }{ {{ job.duration }} }{ {{ job.role }} }{ {{ job.location }} }
+        \begin{rSubsection}{ {{ job.company }} }{ {{ job.duration }} }{ {{ job.role }} }{ {{ job.location }} }
         {% for point in job.points %}
+            \item {{ point }}
+            {% endfor %}
+        \end{rSubsection}
+            {% endfor %}
+    \end{rSection}
+
+    \begin{rSection}{Projects}
+    {% for project in projects %}
+        \begin{rSubsection}{\href{ {{ project.url }} }{ {{ project.name }} }}{}{ {{ project.tech_stack }} }{}
+        {% for point in project.points %}
             \item {{ point }}
             {% endfor %}
         \end{rSubsection}
@@ -50,21 +59,12 @@
 
     \end{rSection}
 
-\begin{rSection}{Projects}
-
-{% for project in projects %}
-\begin{rSubsection}{\href{ {{ project.url }} }{ {{ project.name }} }}{}{ {{ project.tech_stack }} }{}
-    \item {{ project.description }}
-\end{rSubsection}
-{% endfor %}
-
-\end{rSection}
-
-
     \begin{rSection}{Achievements}
-    {% for item in achievements %}
-        \item {{ item }}
-        {% endfor %}
+        \begin{rSubsection}{}{}{}{}
+        {% for item in achievements %}
+            \item {{ item }}
+            {% endfor %}
+        \end{rSubsection}
     \end{rSection}
 
 \end{document}
